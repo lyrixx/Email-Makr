@@ -1,0 +1,23 @@
+#!/usr/bin/env php
+<?php
+
+require_once __DIR__.'/vendor/autoload.php';
+
+use Symfony\Component\Console\Application;
+
+use Sensio\Command\Build;
+
+$console = new Application('SensioEmailing', '0.1');
+
+$c = new \Pimple();
+
+$c['twig'] = $c->share($c->protect(function($templateDir) {
+  $loader = new Twig_Loader_Filesystem($templateDir);
+  $twig = new Twig_Environment($loader);
+
+  return $twig;
+}));
+
+$console->add(new Build($c['twig']));
+
+$console->run();

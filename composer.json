@@ -1,0 +1,19 @@
+{
+    "name": "sensio/emailings",
+    "description": "Generator email thanks from csv",
+    "require": {
+        "twig/twig": "dev-master",
+        "symfony/console": "dev-master",
+        "pimple/pimple": "dev-master"
+    },
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Grégoire Pineau",
+            "email": "lyrixx@lyrixx.info"
+        }
+    ],
+    "autoload": {
+        "psr-0": { "Sensio": "" }
+    }
+}

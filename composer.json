@@ -1,6 +1,6 @@
 {
-    "name": "sensio/emailings",
-    "description": "Generator email thanks from csv",
+    "name": "lyrixx/email-makr",
+    "description": "Generate emailings with twig and csv",
     "require": {
         "twig/twig": "dev-master",
         "symfony/console": "dev-master",

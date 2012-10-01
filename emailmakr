@@ -7,7 +7,7 @@ use Symfony\Component\Console\Application;
 
 use Sensio\Command\Build;
 
-$console = new Application('SensioEmailing', '0.1');
+$console = new Application('Email-Makr', '0.1');
 
 $c = new \Pimple();
 

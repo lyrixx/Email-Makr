@@ -1,5 +1,5 @@
 {
-    "hash": "f477a9b7b54f42adb71c53beeb2bf640",
+    "hash": "82661035290c4064fbe41d45eb9ea1eb",
     "packages": [
         {
             "name": "pimple/pimple",
@@ -144,7 +144,58 @@
             ]
         }
     ],
-    "packages-dev": null,
+    "packages-dev": [
+        {
+            "name": "symfony/class-loader",
+            "version": "dev-master",
+            "target-dir": "Symfony/Component/ClassLoader",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/ClassLoader",
+                "reference": "6d7411ecce4cab5cdab806a950db73de8aee778f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/symfony/ClassLoader/zipball/6d7411ecce4cab5cdab806a950db73de8aee778f",
+                "reference": "6d7411ecce4cab5cdab806a950db73de8aee778f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "symfony/finder": "2.2.*"
+            },
+            "time": "1348817656",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.2-dev"
+                }
+            },
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\ClassLoader\\": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony ClassLoader Component",
+            "homepage": "http://symfony.com"
+        }
+    ],
     "aliases": [
 
     ],
@@ -152,6 +203,7 @@
     "stability-flags": {
         "twig/twig": 20,
         "symfony/console": 20,
-        "pimple/pimple": 20
+        "pimple/pimple": 20,
+        "symfony/class-loader": 20
     }
 }

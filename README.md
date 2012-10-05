@@ -52,6 +52,17 @@ Options:
 * `--output-format`, default: `"mail_LANG.html`. `LANG` is a placeholder.
   It will be remplaced by the current language
 
+Ouput looks for:
+
+```
+$ ./emailmakr.php generate-email index.html.twig datas.csv
+Generated "/var/www/dev/sensio/emailings/exemple/emailings/mail_fr.html"
+Generated "/var/www/dev/sensio/emailings/exemple/emailings/mail_en.html"
+Generated "/var/www/dev/sensio/emailings/exemple/emailings/mail_es.html"
+Generated "/var/www/dev/sensio/emailings/exemple/emailings/mail_it.html"
+Finished
+```
+
 Installation
 ------------
 

@@ -15518,6 +15518,8 @@ class Build extends BaseCommand
         }
 
         $output->writeln(sprintf('<info>Finished</info>', $outputFile));
+
+        return 0;
     }
 }
 }

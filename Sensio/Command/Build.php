@@ -116,7 +116,7 @@ class Build extends BaseCommand
 
             file_put_contents($outputFile, $twigOutput);
 
-            $output->writeln(sprintf('<info>Generated "%s"</info>', $outputFile));
+            $output->writeln(sprintf('<comment>Generated "%s"</comment>', $outputFile));
         }
 
         $output->writeln(sprintf('<info>Finished</info>', $outputFile));

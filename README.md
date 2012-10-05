@@ -51,3 +51,15 @@ Options:
 * `--output-directory`, default: `./emailings/`
 * `--output-format`, default: `"mail_LANG.html`. `LANG` is a placeholder.
   It will be remplaced by the current language
+
+Installation
+------------
+
+### Use it as a single file:
+
+Downlaod [email-makr](https://raw.github.com/lyrixx/Email-Makr/master/build/emailmakr.php)
+and run it: `php email-makr`.
+
+### With Composer:
+
+`composer create-project lyrixx/email-makr email-makr`

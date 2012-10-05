@@ -172,8 +172,14 @@ $classes = str_replace("eval('?>'.", 'eval(', $classes);
 $app = 'namespace {'.str_replace('<?php', '', file_get_contents(__DIR__.'/emailmakr')).'}';
 $app = str_replace('#!/usr/bin/env php', '', $app);
 
+$license = file_get_contents(__DIR__.'/LICENSE');
+
 $content = "#!/usr/bin/env php
 <?php
+
+/*
+$license
+*/
 $classes
 $app
 ";

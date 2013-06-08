@@ -2,22 +2,21 @@
     "name": "lyrixx/email-makr",
     "description": "Generate emailings with twig and csv",
     "license": "MIT",
-    "require": {
-        "twig/twig": "dev-master",
-        "symfony/console": "dev-master",
-        "pimple/pimple": "dev-master"
-    },
-    "minimum-stability": "dev",
     "authors": [
         {
             "name": "Grégoire Pineau",
             "email": "lyrixx@lyrixx.info"
         }
     ],
-    "autoload": {
-        "psr-0": { "Sensio": "" }
+    "require": {
+        "twig/twig": "~1.12",
+        "symfony/console": "~2.3",
+        "pimple/pimple": "~1.0.0"
     },
     "require-dev": {
-        "symfony/class-loader": "dev-master"
+        "symfony/class-loader": "~2.3"
+    },
+    "autoload": {
+        "psr-0": { "Sensio": "" }
     }
 }

@@ -108,7 +108,7 @@ class Build extends BaseCommand
 
             $twigVar = array_combine($varName, $line);
             try {
-                $twigOutput =  $twig->render($template, array_merge(array('lang' => $lang), $twigVar));
+                $twigOutput =  $twig->render($template->getPathName(), array_merge(array('lang' => $lang), $twigVar));
             } catch (Twig_Error_Syntax $e) {
                 $output->writeln(sprintf('<error>There is one error in twig template \'%s\'. Error : \'%s\'</error>', $templateFile, $e->getMessage()));
             }

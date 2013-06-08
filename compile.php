@@ -5,7 +5,6 @@
 // Ported from Sismo https://github.com/fabpot/Sismo
 
 use Symfony\Component\ClassLoader\ClassCollectionLoader;
-use Symfony\Component\Finder\Finder;
 
 require_once __DIR__.'/vendor/autoload.php';
 @mkdir(__DIR__.'/build', 0777, true);

@@ -1,6 +1,7 @@
 {
     "name": "lyrixx/email-makr",
     "description": "Generate emailings with twig and csv",
+    "license": "MIT",
     "require": {
         "twig/twig": "dev-master",
         "symfony/console": "dev-master",
